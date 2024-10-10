@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container py-2">
+        <h1 class="title">Gestión de inventario</h1>
+        <h2 class="lead">Agregar Producto</h2>
+        <form>
+            <input id="nombre" type="text" placeholder="Ingrese el producto" class="form-control my-2">
+            <input id="cantidad" type="number" placeholder="Ingrese la cantidad" class="form-control my-2">
+            <div class="button-container">
+                <button id="boton" class="btn btn-success" type="reset" onclick="agregarProductos()">Agregar</button>
+                <button id="boton1" class="btn btn-success" type="reset" onclick="actualizarCantidad()">Actualizar Cantidad</button>
+                <button id="boton2" class="btn btn-success" type="reset" onclick="eliminarProductos()">Eliminar Productos Sin Stock</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#tabla {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /*Distribuye el espacio de manera uniforme entre los botones*/
+}
+
+.button-container button {
+    flex: 1;
+    margin: 5px;
+}
